@@ -130,7 +130,7 @@ async def _callbacks(bot: Client, callback_query: CallbackQuery):
             if user_id == muted_user_id:
                 await bot.get_chat_member(force_chat, user_id)
                 await bot.unban_chat_member(chat_id, user_id)
-                await callback_query.answer("Good Kid. You can start chatting properly in group now.", show_alert=True)
+                await callback_query.answer("හරි ✅දැන් ඔයාට ඕනේතරම් ගෘප් එකේ Msg කරන්න පුලුවන්🥰❤️", show_alert=True)
                 await callback_query.message.delete()
             else:
                 await callback_query.answer('This message is not for you!', show_alert=True)
