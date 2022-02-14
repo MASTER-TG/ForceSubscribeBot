@@ -45,7 +45,7 @@ async def main(bot: Client, msg: Message):
                     await msg.chat.restrict_member(user_id, ChatPermissions(can_send_messages=False))
                     buttons.append([InlineKeyboardButton("Unmute Me☘️", callback_data=f"joined+{msg.from_user.id}")])
                 await msg.reply(
-                    f"👇පහල තියෙන {mention} Channel එකට Join වෙලා Unmute ඔබන්න🔥එතකොට ඔයාට සින්දු ඉල්ලන්න පුලුවන්🤗🌺.",
+                    f"👇පහල තියෙන {mention} Channel එකට Join වෙලා,👉(Unmute Me☘️)ඔබන්න🔥එතකොට ඔයාට දිගටම සින්දු ඉල්ලන්න පුලුවන්🤗🌺.",
                     disable_web_page_preview=True,
                     reply_markup=InlineKeyboardMarkup(buttons),
                 )
