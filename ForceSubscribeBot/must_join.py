@@ -23,7 +23,7 @@ async def must_join_channel(bot: Client, msg: Message):
                     disable_web_page_preview=True,
                     reply_markup=InlineKeyboardMarkup([
                         [InlineKeyboardButton("🌸 Join වන්න 🔥", url=link)]
-                    ])
+                    ],[InlineKeyboardButton('Instagram⚡️', url='https://instagram.com/pasiya_lk')
                 )
                 await msg.stop_propagation()
             except ChatWriteForbidden:
