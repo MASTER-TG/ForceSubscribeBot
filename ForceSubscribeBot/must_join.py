@@ -19,11 +19,11 @@ async def must_join_channel(bot: Client, msg: Message):
                 link = chat_info.invite_link
             try:
                 await msg.reply(
-                    f"⭕️ ඔයා පහල 👇 තියෙන {mention} Channel එකට Join වෙලා,👉(Unmute Me☘️)ඔබන්න🔥එතකොට ඔයාට දිගටම අපෙන් සින්දු ඉල්ලන්න පුලුවන්🤗🌺.❤️ඒවගේම අනිවාරෙන් Instagram ත් Follow කරන්න👉https://instagram.com/pasiya_lk⚡️",
+                    f"⭕️ ඔයා පහල 👇 තියෙන [this channel]({link}) එකට Join වෙලා,👉(Unmute Me☘️)ඔබන්න🔥එතකොට ඔයාට දිගටම අපෙන් සින්දු ඉල්ලන්න පුලුවන්🤗🌺.❤️ඒවගේම අනිවාරෙන් Instagram ත් Follow කරන්න👉https://instagram.com/pasiya_lk⚡️",
                     disable_web_page_preview=True,
                     reply_markup=InlineKeyboardMarkup([
-                        [InlineKeyboardButton("🌸 Join වන්න 🔥", url=link)]
-                    ],[InlineKeyboardButton('Instagram⚡️', url='https://instagram.com/pasiya_lk')
+                        [InlineKeyboardButton(" ⭐️ Join Channel 🔥 ", url=link)]
+                    ])
                 )
                 await msg.stop_propagation()
             except ChatWriteForbidden:
