@@ -45,7 +45,7 @@ async def main(bot: Client, msg: Message):
                     await msg.chat.restrict_member(user_id, ChatPermissions(can_send_messages=False))
                     buttons.append([InlineKeyboardButton("Unmute Me☘️", callback_data=f"joined+{msg.from_user.id}")])
                 await msg.reply(
-                    f"⭕️ ඔයා පහල 👇 තියෙන {mention} Channel එකට Join වෙලා,👉(Unmute Me☘️)ඔබන්න🔥එතකොට ඔයාට දිගටම අපෙන් සින්දු ඉල්ලන්න පුලුවන්🤗🌺.❤️ඒවගේම අනිවාරෙන් Instagram ත් Follow කරන්න👉",
+                    f"⭕️ ඔයා පහල 👇 තියෙන {mention} Channel එකට Join වෙලා,👉(Unmute Me☘️)ඔබන්න🔥එතකොට ඔයාට දිගටම අපෙන් සින්දු ඉල්ලන්න පුලුවන්🤗🌺.❤️ඒවගේම අනිවාරෙන් Instagram ත් Follow කරන්න👉"Instagram", url="https://instagram.com/pasiya_lk"⚡",
                     disable_web_page_preview=True,
                     reply_markup=InlineKeyboardMarkup(buttons),
                 )
