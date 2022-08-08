@@ -13,7 +13,7 @@ The chat can be a group or channel. It can be private or public.
 
 Use below buttons to learn more !
 
-By @Tg_Nsns_999
+By @tg_Nsns_999
     """
 
     # Home Button
@@ -29,7 +29,7 @@ By @Tg_Nsns_999
             InlineKeyboardButton("🎪 About 🎪", callback_data="about")
         ],
         [InlineKeyboardButton("♥ More Amazing bots ♥", url="https://t.me/Tg_nsns_999")],
-        [InlineKeyboardButton("🎨 Support Group 🎨", url="https://t.me/Songshut")],
+        [InlineKeyboardButton("🎨 Support Group 🎨", url="https://t.me/memeshut")],
     ]
 
     # Help Message
